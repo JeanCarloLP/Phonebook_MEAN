@@ -4,6 +4,14 @@ The project is about a simple phonebook to deploy a list of contacts. The user w
 
 It is divided by a few main sections to explain the deployment and functionality of the template.
 
+## Prerequisites
+
+In case you want to check directly the code on your code editor and make some enhancements, remember you must use at leats the following:
+Both the CLI and generated project have dependencies that require Node 8.9 or higher, together
+with NPM 5.5.1 or higher.
+You will need a code editor, in my case I use Visual Studio Code.
+The Angular version is the stable Angular 8.
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -42,10 +50,22 @@ ng help
 
 ## Angular
 
-To deploy the application use the following command:
+```bash
+npm install -g @angular/cli
+```
+
+To check the version you can check the info on the package.json file and examine the diferent setted packages.
+
+After download the project, and position yourself at the project folder, to deploy the application use the following command:
 
 ```bash
 ng serve -o
+```
+
+For the style section on the frontend I use Angular material.
+
+```bash
+ng add @angular/material
 ```
 
 ## License
