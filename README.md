@@ -8,6 +8,7 @@ It is divided by a few main sections to explain the deployment and functionality
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Angular](#angular)
 * [License](#license)
 
 ## Installation
@@ -41,9 +42,11 @@ ng help
 
 ## Angular
 
-After the final user download this project remaember to install and initiate it by the following commands
-ng install
+To deploy the application use the following command:
+
+```bash
 ng serve -o
+```
 
 ## License
 
