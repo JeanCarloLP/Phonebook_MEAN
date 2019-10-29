@@ -8,10 +8,11 @@ import { ListComponent } from './components/list/list.component';
 import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
+// HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 // Material
 import { MatToolbarModule } from '@angular/material';
-
-// Pipes
 
 // Routes
 import { RouterModule } from '@angular/router';
@@ -30,7 +31,8 @@ import { ROUTES } from './app.routes';
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot( ROUTES, { useHash: true } ),
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
