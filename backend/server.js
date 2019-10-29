@@ -13,7 +13,7 @@ const router = express.Router();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect( 'mongodb://localhost:27017/contacts' );
+mongoose.connect( 'mongodb://localhost:27017/phonebook' );
 
 const connection = mongoose.connection;
 
@@ -22,7 +22,7 @@ connection.once( 'open', () => {
 });
 
 // ERRORS
-router.route( '/contacts' ).get( (req, res) => {
+router.route( '/phonebook/contacts' ).get( (req, res) => {
     Contact.find( ( err, contacts ) => {
         if (err)
             console.log(err);
@@ -31,7 +31,7 @@ router.route( '/contacts' ).get( (req, res) => {
     })
 });
 
-router.route( '/contacts/:id' ).get( (req, res ) => {
+router.route( '/phonebook/contacts/:id' ).get( (req, res ) => {
     Contact.findById( req.params.id, ( err, contact ) => {
         if (err)
             console.log(err);
@@ -41,7 +41,7 @@ router.route( '/contacts/:id' ).get( (req, res ) => {
 });
 
 // CREATE
-router.route( '/contacts/add' ).post( ( req, res ) => {
+router.route( '/phonebook/contacts/add' ).post( ( req, res ) => {
     let contact = new Contact( req.body );
     contact.save().then( contact => {
         res.status( 200 ).json({'contact': 'Added successfully!'});
@@ -51,14 +51,14 @@ router.route( '/contacts/add' ).post( ( req, res ) => {
 });
 
 // UPDATE
-router.route( '/contacts/update/:id' ).post( (req, res) => {
+router.route( '/phonebook/contacts/update/:id' ).post( (req, res) => {
     Contact.findById( req.params.id, ( err, contact ) => {
         if (!contact)
             return next( new Error( 'Could not load document!' ));
         else {
             contact.name = req.body.name;
             contact.lastName = req.body.lastName;
-            contact.telephone = req.body.telephone;
+            contact.phone = req.body.phone;
 
             contact.save().then( contact => {
                 res.json('Update done!');
@@ -70,7 +70,7 @@ router.route( '/contacts/update/:id' ).post( (req, res) => {
 });
 
 // DELETE
-router.route('/contacts/delete/:id').get( (req, res) => {
+router.route('/phonebook/contacts/delete/:id').delete( (req, res) => {
     Contact.findByIdAndRemove({_id: req.params.id}, (err, contact) => {
         if (err)
             res.json(err);
