@@ -11,9 +11,8 @@ The project is about a simple phonebook agenda to deploy a list of contacts. The
 * [License](#license)
 
 ## Prerequisites
-![pre node](https://nodejs.org/en/)
-![pre angular](https://angular.io/cli)
-![pre mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
+![spa pipes]()
 
 The following info is to set the minimun installations to deploy properly the application. In case you already deal with this kind of situations feel free to go to the following point.
 
@@ -26,14 +25,15 @@ The following info is to set the minimun installations to deploy properly the ap
 
 **BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
 
-After dowload the repository you must execute the following commands:
+Before to dowload the project you must execute the following commands to set the minimal configuration to your equip:
 
 ### Node installation
 ```bash
-go to the website (https://nodejs.org/en/) and install the stable version
+go to the website (https://nodejs.org/en/) and install the stable version.
 ```
 
 ### Angular installation
+After the NodeJS installation, execute the following command from a terminal.
 ```bash
 npm install -g @angular/cli
 ```
@@ -45,7 +45,7 @@ npm install -g typescript
 
 ### MongoDB installation (recomended)
 ```bash
-go to the website and following the instructions
+go to the website and following the instructions for:
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 ```
@@ -53,33 +53,33 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 
 ## Project
 
-After download the project from the repository, and position yourself at the project folder, to deploy the application use the following commands:
+After download the project from the repository, execute the following commands:
 
 ```bash
-install all the packages in  .../phonebook>
+.../phonebook>
     npm install
 ```
 
+due the mongoDB and babel extensions (compiler to use ES6) execute the following commands to set a proper configuration
 ```bash
-due the mongoDB and babel extensions (compiler to use ES6) execute the following command to set proper configuration in
 .../backend>
     npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
 ```
 
-```bash
 launch mongodb to have access to the data base
+```bash
 .../backend>
     mongod
 ```
 
-```bash
 from a diferent terminal launch the following command
+```bash
 .../backend>
     npm run dev
 ```
 
-```bash
 from a diferent terminal launch the following command
+```bash
 .../phonebook>
     ng serve -o
 ```
