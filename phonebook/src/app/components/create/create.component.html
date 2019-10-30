@@ -1,1 +1,33 @@
-<p>create works!</p>
+<div>
+    <br>
+    <mat-card>
+        <section class="mat-typography">
+            <h3>Create a new contact</h3>
+        </section>
+        <mat-divider></mat-divider>
+        <br>
+        <form [formGroup]="createForm" class="create-form">
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact name" formControlName="name" #name>
+            </mat-form-field>
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact last name" formControlName="lastName" #lastName>
+            </mat-form-field>
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact phone number" formControlName="phone" #phone>
+                
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <br><br>
+            <div class="alignRight">
+                <button mat-raised-button color="accent" [routerLink]="['/home']">Return</button>
+                <button type="submit" 
+                        (click)="addContact(name.value, lastName.value, phone.value)" 
+                        [disabled]="createForm.pristine || createForm.invalid"
+                        mat-raised-button color="primary"
+                        class="createButton"
+                >Save</button>
+            </div>
+        </form>
+    </mat-card>
+</div>

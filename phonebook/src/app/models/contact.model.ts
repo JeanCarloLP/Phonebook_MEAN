@@ -1,6 +1,4 @@
-export class ContactModel {
-    // tslint:disable-next-line:variable-name
-    id: string;
+export class NewContactModel {
     name: string;
     lastName: string;
     phone: string;

@@ -1,1 +1,33 @@
-<p>edit works!</p>
+<div>
+    <br>
+    <mat-card>
+        <section class="mat-typography">
+            <h3>Update contact</h3>
+        </section>
+        <mat-divider></mat-divider>
+        <br>
+        <form [formGroup]="updateForm" class="update-form">
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact name" formControlName="name" #name>
+            </mat-form-field>
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact last name" formControlName="lastName" #lastName>
+            </mat-form-field>
+            <mat-form-field class="field-full-width">
+                <input matInput placeholder="Contact phone number" formControlName="phone" #phone>
+                
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <br><br>
+            <div class="alignRight">
+                <button mat-raised-button color="accent" [routerLink]="['/home']">Return</button>
+                <button type="submit" 
+                        (click)="updateContact(name.value, lastName.value, phone.value)" 
+                        [disabled]="updateForm.pristine || updateForm.invalid"
+                        mat-raised-button color="primary"
+                        class="updateButton"
+                >Update</button>
+            </div>
+        </form>
+    </mat-card>
+</div>
