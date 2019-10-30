@@ -1,74 +1,92 @@
-# Phonebook_MEAN
+# Phonebook App (MEAN Stack application)
 In this repository you can find a small example of a MEAN stack application.
-The project is about a simple phonebook to deploy a list of contacts. The user will be available to create new entrances, edit or delete an specific contact.
+The project is about a simple phonebook agenda to deploy a list of contacts. The user will be available to create new contacts, edit a previous contact or delete an specific one.
 
-It is divided by a few main sections to explain the deployment and functionality of the template.
-
-## Prerequisites
-
-In case you want to check directly the code on your code editor and make some enhancements, remember you must use at leats the following:
-Both the CLI and generated project have dependencies that require Node 8.9 or higher, together
-with NPM 5.5.1 or higher.
-You will need a code editor, in my case I use Visual Studio Code.
-The Angular version is the stable Angular 8.
 
 ## Table of Contents
 
+* [Prerequisites](#prerequisites)
 * [Installation](#installation)
-* [Usage](#usage)
-* [Angular](#angular)
+* [Project](#project)
 * [License](#license)
+
+## Prerequisites
+![pre node](https://nodejs.org/en/)
+![pre angular](https://angular.io/cli)
+![pre mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
+The following info is to set the minimun installations to deploy properly the application. In case you already deal with this kind of situations feel free to go to the following point.
+
+· The project have dependencies that require Node 8.9.4 or higher with npm 5.5.1 or higher.
+· Angular 7 or 8 (more oriented for best practices with routing and components).
+· MongoDB
+· You will need a code editor, in my case I use Visual Studio Code.
 
 ## Installation
 
 **BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
 
-### Install Globally
+After dowload the repository you must execute the following commands:
+
+### Node installation
+```bash
+go to the website (https://nodejs.org/en/) and install the stable version
+```
+
+### Angular installation
 ```bash
 npm install -g @angular/cli
 ```
 
-### Install Locally
+### TypeScript installation (recomended)
 ```bash
-npm install @angular/cli
+npm install -g typescript
 ```
 
-To run a locally installed version of the angular-cli, you can call `ng` commands directly by adding the `.bin` folder within your local `node_modules` folder to your PATH. The `node_modules` and `.bin` folders are created in the directory where `npm install @angular/cli` was run upon completion of the install command.
-
-Alternatively, you can install [npx](https://www.npmjs.com/package/npx) and run `npx ng <command>` within the local directory where `npm install @angular/cli` was run, which will use the locally installed angular-cli.
-
-### Install Specific Version (Example: 6.1.1)
+### MongoDB installation (recomended)
 ```bash
-npm install -g @angular/cli@6.1.1
+go to the website and following the instructions
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 ```
 
-## Usage
+
+## Project
+
+After download the project from the repository, and position yourself at the project folder, to deploy the application use the following commands:
 
 ```bash
-ng help
+install all the packages in  .../phonebook>
+    npm install
 ```
-
-## Angular
 
 ```bash
-npm install -g @angular/cli
+due the mongoDB and babel extensions (compiler to use ES6) execute the following command to set proper configuration in
+.../backend>
+    npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
 ```
-
-To check the version you can check the info on the package.json file and examine the diferent setted packages.
-
-After download the project, and position yourself at the project folder, to deploy the application use the following command:
 
 ```bash
-ng serve -o
+launch mongodb to have access to the data base
+.../backend>
+    mongod
 ```
-
-For the style section on the frontend I use Angular material.
 
 ```bash
-ng add @angular/material
+from a diferent terminal launch the following command
+.../backend>
+    npm run dev
 ```
+
+```bash
+from a diferent terminal launch the following command
+.../phonebook>
+    ng serve -o
+```
+
+Now you can test the app on your browser
 
 ## License
 
-[MIT](https://github.com/angular/angular-cli/blob/master/LICENSE)
+GNU General Public License v3.0
 
