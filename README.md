@@ -12,7 +12,6 @@ The project is about a simple phonebook agenda to deploy a list of contacts. The
 
 ## Prerequisites
 
-![spa pipes]()
 
 The following info is to set the minimun installations to deploy properly the application. In case you already deal with this kind of situations feel free to go to the following point.
 
