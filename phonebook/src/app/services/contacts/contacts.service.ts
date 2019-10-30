@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ContactModel } from '../../models/contact.model';
+import { NewContactModel } from '../../models/contact.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class ContactsService {
   }
 
   // Create new contact
-  addContact( contact: ContactModel ) {
+  addContact( contact: NewContactModel ) {
     const newContact = {
       ...contact
     };
@@ -30,11 +30,11 @@ export class ContactsService {
   }
 
   // Update contact
-  updateContact( contact: ContactModel ) {
+  updateContact( contact: NewContactModel, id: string ) {
     const contactUpdated = {
       ...contact
     };
-    return this.http.post( `${this.url}/update/${contactUpdated.id}`, contactUpdated );
+    return this.http.post( `${this.url}/update/${id}`, contactUpdated );
   }
 
   // Delete contact by id

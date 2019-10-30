@@ -1,0 +1,16 @@
+.updateButton {
+    margin-left: 5px;
+}
+
+.update-form {
+    min-width: 150px;
+    width: 100%
+}
+
+.field-full-width {
+    width: 100%;
+}
+
+.alignRight {
+    text-align: right;
+}

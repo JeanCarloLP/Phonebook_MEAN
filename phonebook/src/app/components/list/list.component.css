@@ -1,0 +1,15 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.newContact {
+    margin-left: 20px;
+}
+
+.table {
+    width: 100%
+}
