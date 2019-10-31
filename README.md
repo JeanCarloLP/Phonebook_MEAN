@@ -95,18 +95,35 @@ Now you can test the app on your browser
 To test the application I use some applications as Postman, or the terminal for some simple test on the data base.
 I just put some images to show some tips, for a proper testing I recomend not on ly test about communication between backend and frontend, is recomended to test some basic queries, configurations, test the server, and individual test on the frontend with a final e2e test.
 
-MongoDB:
+###### MongoDB:
 ![Image of mongoDB](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/MongoDB%20testing.png)
 
 
-Front-end / Backend:
+###### Front-end / Backend:
 ![Image frontend](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Phonebook%20Test%20Frontend_Backend%20Communication.png)
 
 ![Image backend](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/test%20uri%20database%20contacts.png)
 
 
-Postman:
+###### Postman:
+
+Get all contacts
+
 ![Image postman_01](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_001%20Get%20Contacts.png)
+
+Create a new contact
+![Image postman_02](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_002%20Create%20contact.png)
+
+Update a previous contact
+![Image postman_03](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_003%20Update%20contact.png)
+
+Delete an specific contact
+![Image postman_03](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_004_Delete%20contact.png)
+
+
+###### Regular Expresion:
+This  is a testing online for [regular expressions]https://www.regextester.com/
+![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png)
 
 ## License
 
