@@ -8,6 +8,7 @@ The project is about a simple phonebook agenda to deploy a list of contacts. The
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Project](#project)
+* [Testing](#testing)
 * [License](#license)
 
 ## Prerequisites
@@ -28,7 +29,7 @@ Before to dowload the project you must execute the following commands to set the
 
 ### Node installation
 ```bash
-go to the website (https://nodejs.org/en/) and install the stable version.
+go to the [nodejs](https://nodejs.org/en/) website and install the stable version.
 ```
 
 ### Angular installation
@@ -45,8 +46,8 @@ npm install -g typescript
 ### MongoDB installation (recomended)
 ```bash
 go to the website and following the instructions for:
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+[for Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+[for Mac](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 ```
 
 
@@ -84,6 +85,14 @@ from a diferent terminal launch the following command
 ```
 
 Now you can test the app on your browser
+
+## Project
+
+To test the application I use some applications as Postman, or the terminal for some simple test on the data base.
+I just put some images to show some tips, for a proper testing I recomend not on ly test about communication between backend and frontend, is recomended to test some basic queries, configurations, test the server, and individual test on the frontend with a final e2e test.
+
+
+
 
 ## License
 

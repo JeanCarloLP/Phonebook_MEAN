@@ -27,7 +27,7 @@ export class CreateComponent implements OnInit {
 
   ngOnInit() {
     this.createForm =  this.fb.group({
-      name: ['', Validators.required],
+      name: new FormControl('', [Validators.required]),
       lastName: ['', Validators.required],
       phone: new FormControl('', Validators.compose([Validators.required, Validators.pattern(this.myPattern)]))
     });
@@ -42,4 +42,5 @@ export class CreateComponent implements OnInit {
       this.router.navigate(['/home']);
     });
   }
+
 }
