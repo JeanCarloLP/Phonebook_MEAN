@@ -55,7 +55,7 @@ go to the website and following the instructions for:
 
 Before to download the project I just add this image I found in internet that perfectly suits the architecture of this simple project
 
-![Image of architecture] (https://github.com/JeanCarloLP/Phonebook_MEAN/tree/master/images/Architecture.png)
+![Image of architecture](https://github.com/JeanCarloLP/Phonebook_MEAN/tree/master/images/Architecture.png)
 
 Ok, now after download the project from the repository, execute the following commands:
 
