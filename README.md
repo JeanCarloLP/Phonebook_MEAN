@@ -100,8 +100,8 @@ MongoDB tests:
 
 
 Front-end / Backend tests:
-![Image frontend](images/Phonebook Test Frontend_Backend Communication.png)
-![Image backend](images/test uri database contacts.png)
+
+![Image frontend](images/test uri database contacts.png)
 
 ## License
 
