@@ -29,7 +29,7 @@ Before to dowload the project you must execute the following commands to set the
 
 ### Node installation
 ```bash
-go to the [nodejs](https://nodejs.org/en/) website and install the stable version.
+go to the nodejs (https://nodejs.org/en/) website and install the stable version.
 ```
 
 ### Angular installation
@@ -46,8 +46,8 @@ npm install -g typescript
 ### MongoDB installation (recomended)
 ```bash
 go to the website and following the instructions for:
-[for Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
-[for Mac](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+for Windows: (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+for Mac]: (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 ```
 
 
@@ -107,22 +107,22 @@ I just put some images to show some tips, for a proper testing I recomend not on
 
 ###### Postman:
 
-Get all contacts
+###### Get all contacts
 
 ![Image postman_01](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_001%20Get%20Contacts.png)
 
-Create a new contact
+###### Create a new contact
 ![Image postman_02](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_002%20Create%20contact.png)
 
-Update a previous contact
+###### Update a previous contact
 ![Image postman_03](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_003%20Update%20contact.png)
 
-Delete an specific contact
+###### Delete an specific contact
 ![Image postman_03](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/Postman_004_Delete%20contact.png)
 
 
 ###### Regular Expresion:
-This  is a testing online for [regular expressions]https://www.regextester.com/
+This  is a testing online for regular expressions https://www.regextester.com/
 ![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png)
 
 ## License
