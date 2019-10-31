@@ -123,7 +123,7 @@ I just put some images to show some tips, for a proper testing I recomend not on
 
 ###### Regular Expresion:
 This  is a testing online for regular expressions https://www.regextester.com/
-![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png | width=100)
+![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png|width=100)
 
 ## License
 
