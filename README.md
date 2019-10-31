@@ -53,7 +53,11 @@ go to the website and following the instructions for:
 
 ## Project
 
-After download the project from the repository, execute the following commands:
+Before to download the project I just add this image I found in internet that perfectly suits the architecture of this simple project
+
+![Image of architecture] (https://github.com/JeanCarloLP/Phonebook_MEAN/tree/master/images/Architecture.png)
+
+Ok, now after download the project from the repository, execute the following commands:
 
 ```bash
 .../phonebook>
@@ -91,7 +95,8 @@ Now you can test the app on your browser
 To test the application I use some applications as Postman, or the terminal for some simple test on the data base.
 I just put some images to show some tips, for a proper testing I recomend not on ly test about communication between backend and frontend, is recomended to test some basic queries, configurations, test the server, and individual test on the frontend with a final e2e test.
 
-![Image of architecture](https://github.com/JeanCarloLP/Phonebook_MEAN/tree/master/images/Architecture.png)
+MongoDB testing
+![Image of architecture] (https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/MongoDB%20testing.png)
 
 
 ## License
