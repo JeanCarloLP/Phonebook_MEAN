@@ -29,7 +29,7 @@ Before to dowload the project you must execute the following commands to set the
 
 ### Node installation
 ```bash
-go to the nodejs (https://nodejs.org/en/) website and install the stable version.
+go to the nodejs https://nodejs.org/en/ website and install the stable version.
 ```
 
 ### Angular installation
@@ -46,8 +46,8 @@ npm install -g typescript
 ### MongoDB installation (recomended)
 ```bash
 go to the website and following the instructions for:
-for Windows: (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
-for Mac]: (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+for Windows: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+for Mac: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
 ```
 
 
@@ -123,7 +123,7 @@ I just put some images to show some tips, for a proper testing I recomend not on
 
 ###### Regular Expresion:
 This  is a testing online for regular expressions https://www.regextester.com/
-![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png)
+![Image regexp](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/expresion%20regular%20format.png =250x250)
 
 ## License
 
