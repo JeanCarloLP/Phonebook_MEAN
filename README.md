@@ -100,8 +100,7 @@ MongoDB tests:
 
 
 Front-end / Backend tests:
-
-![Image frontend](images/test uri database contacts.png)
+![Image frontend](https://github.com/JeanCarloLP/Phonebook_MEAN/blob/master/images/test%20uri%20database%20contacts.png)
 
 ## License
 
