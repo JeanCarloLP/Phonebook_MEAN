@@ -9,13 +9,21 @@
         <form [formGroup]="updateForm" class="update-form">
             <mat-form-field class="field-full-width">
                 <input matInput placeholder="Contact name" formControlName="name" #name>
+                <mat-error>
+                    Please provide name.
+                </mat-error>
             </mat-form-field>
             <mat-form-field class="field-full-width">
                 <input matInput placeholder="Contact last name" formControlName="lastName" #lastName>
+                <mat-error>
+                    Please provide last name.
+                </mat-error>
             </mat-form-field>
             <mat-form-field class="field-full-width">
                 <input matInput placeholder="Contact phone number" formControlName="phone" #phone>
-                
+                <mat-error>
+                    Please provide phone with the correct pattern e.g. +32 04 123456.
+                </mat-error>
             </mat-form-field>
             <mat-divider></mat-divider>
             <br><br>
